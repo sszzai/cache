@@ -1,19 +1,12 @@
 {
-    "name": "hyperf/cache",
-    "description": "A cache component for hyperf.",
+    "name": "sszzai/cache",
+    "description": "A cache component for sszzai.",
     "license": "MIT",
     "keywords": [
         "php",
-        "hyperf",
+        "sszzai",
         "cache"
     ],
-    "homepage": "https://hyperf.io",
-    "support": {
-        "docs": "https://hyperf.wiki",
-        "issues": "https://github.com/hyperf/hyperf/issues",
-        "pull-request": "https://github.com/hyperf/hyperf/pulls",
-        "source": "https://github.com/hyperf/hyperf"
-    },
     "require": {
         "php": ">=7.2",
         "psr/container": "^1.0|^2.0",
