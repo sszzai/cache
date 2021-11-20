@@ -153,4 +153,14 @@ class RedisDriver extends Driver implements KeyCollectorInterface
     {
         return (bool) $this->redis->sRem($this->getCacheKey($collector), ...$key);
     }
+
+    public function __call($name, $arguments)
+    {
+        try {
+            $data = $this->redis->{$name}(...$arguments);
+        } catch (\Exception $e) {
+            throw  new \RuntimeException($e->getMessage());
+        }
+        return $data;
+    }
 }
